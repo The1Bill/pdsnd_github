@@ -10,10 +10,13 @@ Bikeshare Project for Data Science Programming nanodegree
 This project provides an interface for obtaining statistics about bike share usage
 
 ### Files used
-bikeshare_starter.py.  Additionally, the .csv files for New York City are necessary.
+bikeshare_starter.py.  
+Additionally, the .csv files for New York City are necessary.  
+Washington and Chicago csv files are also needed.
 
 ### Credits
 Forked from udacity/pdsnd_github
 
 ### Edits
 1. Added mention of the source data files
+2. Added mention of an additional two source files
