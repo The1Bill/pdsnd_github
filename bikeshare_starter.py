@@ -15,11 +15,11 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (1 for Chicago, 2 for New York City, 3 for Washington)
+    # get user input for city (1 for Chicago, 2 for New York City, 3 for Washington DC)
     print()
     city = ''
     while city not in ['1', '2', '3']:
-        city = input('Enter city (1 for Chicago, 2 for New York City, 3 for Washington): ')
+        city = input('Enter city (1 for Chicago, 2 for New York City, 3 for Washington DC): ')
         if city not in ['1', '2', '3']:
             print('Invalid city selection. Please enter 1, 2, or 3.')
     city = {'1': 'chicago', '2': 'new york city', '3': 'washington'}.get(city)
@@ -195,13 +195,13 @@ def main():
         user_stats(df)
 
         # Prompt to view raw data
-        view_data = input('Would you like to see the raw data? Enter yes or no: ').lower()
+        view_data = input('Would you like to see the raw data? Type yes or no: ').lower()
         if view_data == 'yes':
             start_idx = 0
             while start_idx < len(df):
                 print(df.iloc[start_idx:start_idx+5])
                 start_idx += 5
-                more = input('Would you like to see 5 more rows? Enter yes or no: ').lower()
+                more = input('Would you like to see 5 additional rows? Enter yes or no: ').lower()
                 if more != 'yes':
                     break
 
