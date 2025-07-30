@@ -195,13 +195,13 @@ def main():
         user_stats(df)
 
         # Prompt to view raw data
-        view_data = input('Would you like to see the raw data? Enter yes or no: ').lower()
+        view_data = input('Would you like to see the raw data? Type yes or no: ').lower()
         if view_data == 'yes':
             start_idx = 0
             while start_idx < len(df):
                 print(df.iloc[start_idx:start_idx+5])
                 start_idx += 5
-                more = input('Would you like to see 5 more rows? Enter yes or no: ').lower()
+                more = input('Would you like to see 5 additional rows? Enter yes or no: ').lower()
                 if more != 'yes':
                     break
 
